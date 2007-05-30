@@ -8,8 +8,11 @@ Overall Project Status: VIP
 
 = Details =
 
-- HTTP module : ALFA
-- Configuration Dialog: ALFA
-- File Hash module: NONE
-- Grabber Engine: VIP
-- Framework: VIP
+ * HTTP module : ALFA
+ * Configuration Dialog: ALFA
+ * File Hash module: NONE
+ * Grabber Engine: VIP
+ * Framework: VIP
+
+
+
