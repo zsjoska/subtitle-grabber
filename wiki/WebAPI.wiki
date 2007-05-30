@@ -32,10 +32,9 @@ The purpose of this page is to describe the requirements for the WEB page in ord
 == WebAPI:==
 
  * checkOnline
-	200 - OK,
-	returns the nonce
-	returns the available languages
-	No user is required
+ Type: GET
+ Success code: 200
+ Success body example:nonce=efa2345abac2c3&lang=EN HUN RO CHT
 
  * login
 	username, password
