@@ -9,7 +9,7 @@ The purpose of this page is to describe the requirements for the WEB page in ord
 = Details =
 
 ==HTTP headers==
- * username
+ * ===username===
 	- the current user's username
 	
  * password
