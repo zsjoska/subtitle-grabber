@@ -1,0 +1,15 @@
+#summary The status of the project
+#labels Featured
+
+= Overall =
+
+Overall Project Status: VIP
+
+
+= Details =
+
+- HTTP module : ALFA
+- Configuration Dialog: ALFA
+- File Hash module: NONE
+- Grabber Engine: VIP
+- Framework: VIP
