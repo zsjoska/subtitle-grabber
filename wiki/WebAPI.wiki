@@ -7,37 +7,41 @@ The purpose of this page is to describe the requirements for the WEB page in ord
 
 
 = Details =
-HTTP headers:
-username
+
+==HTTP headers==
+ * username
 	- the current user's username
 	
-password
+ * password
 	- the user's password
 	
-lang
+ * lang
 	- the language parameter, space sep. ordered values
 
-hash 
+ * hash 
 	- the hash code of the subtitle
 
-nonce 
+ * nonce 
 	- md5 auth required nonce
 	
-sessionid
+ * sessionid
 	- the session id of the current session
 		the server returns this after a successful authentication.
 		the client sends this at every request
 
-WebAPI:
+== WebAPI:==
 
-- checkOnline
+ * checkOnline
 	200 - OK,
 	returns the nonce
 	returns the available languages
 	No user is required
 
-- putSubtitle
-	headers: hash, sessionid body
+ * login
+	username, password
+	
+ * putSubtitle
+	headers: hash, sessionid, body
 
-- findSubtitle
-	headers: hash, 
+ * findSubtitle
+	headers: hash 
