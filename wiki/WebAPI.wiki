@@ -9,38 +9,38 @@ The purpose of this page is to describe the requirements for the WEB page in ord
 = Details =
 
 ==HTTP headers==
- * ===username===
-	- the current user's username
-	
- * password
-	- the user's password
-	
- * lang
-	- the language parameter, space sep. ordered values
 
- * hash 
-	- the hash code of the subtitle
+ ===username===
+  The current user's username.
 
- * nonce 
-	- md5 auth required nonce
+ ===password===
+  The user's password.
+
+ ===lang===
+  The language parameter, space sep. ordered values
+
+ ===hash===
+  The hash code of the subtitle
+
+ ===nonce===
+  MD5 auth required nonce
 	
- * sessionid
-	- the session id of the current session
-		the server returns this after a successful authentication.
-		the client sends this at every request
+ ===sessionid===
+  The session id of the current session. The server returns this after a successful authentication. 
+  The client sends this at every request
 
 == WebAPI:==
 
- * checkOnline
- Type: GET
- Success code: 200
- Success body example:nonce=efa2345abac2c3&lang=EN HUN RO CHT
+ ===checkOnline===
+ * Type: GET
+ * Success code: 200
+ * Success body example:{{{nonce=efa2345abac2c3&lang=EN HUN RO CHT}}}
 
- * login
+ ===login===
 	username, password
 	
- * putSubtitle
+ ===putSubtitle===
 	headers: hash, sessionid, body
 
- * findSubtitle
-	headers: hash 
+ ===findSubtitle===
+	headers: hash
